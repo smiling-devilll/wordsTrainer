@@ -1,6 +1,7 @@
 package ru.atc.wordsTrainer.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import ru.atc.wordsTrainer.entities.Word;
@@ -16,6 +17,7 @@ import java.util.List;
 @Service
 public class TrainingService {
     @Value("${training-words-amount}") int count;
+
 
     @Autowired
     WordRepository wordRepository;

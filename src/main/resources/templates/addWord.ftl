@@ -1,21 +1,15 @@
 <#include "/part/header.ftl">
-<html>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<table>
-    <tr>
-        <td>
-        <#include "menu.ftl">
-        </td>
-
-        <td>
+<div class="container-fluid">
+    <div class="table-view">
+        <div class="span4">
+            <#include "menu.ftl">
+        </div>
+        <div class="span6">
             <form role="button" method="post" action="/translation/translate">
                 <input name="word" type="text" placeholder="Введите слово" />
-                <button  type="submit" class="btn btn-default">Добавить</button>
+                <button  type="submit" class="btn btn-mini">Добавить</button>
             </form>
-        </td>
-    </tr>
-</table>
-
-</html>
+        </div>
+    </div>
+</div>
 <#include "/part/footer.ftl">
